@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./database/authcontext";
-import ProtectedRoute from "./components/protectedroute"; 
-import Login from '../src/views/login';
+import ProtectedRoute from "./components/ProtectedRoute"; 
+import Login from './views/Login';
 import Encabezado from "./components/encabezado";
-import Inicio from "../src/views/inicio";
+import Inicio from "./views/Inicio";
+import Categorias from "./views/categoria"; //Importación de Categorias
 
 import './App.css'
 
@@ -20,6 +21,7 @@ function App() {
                 
                 <Route path="/" element={<Login />} />
                 <Route path="/inicio" element={<ProtectedRoute element={<Inicio />} />} />
+                <Route path="/categorias" element={<ProtectedRoute element={<Categorias />} />}/> //Ruta de Categorias protegida
 
               </Routes>
             </main>
