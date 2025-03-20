@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./database/authcontext";
-import ProtectedRoute from "./components/ProtectedRoute"; 
+import ProtectedRoute from "./components/Protectedroute"; 
 import Login from './views/Login'
 import Encabezado from "./components/Encabezado";
 import Inicio from "./views/Inicio";
