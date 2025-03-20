@@ -51,4 +51,3 @@ const ModalRegistroCategoria = ({
 };
 
 export default ModalRegistroCategoria;
-

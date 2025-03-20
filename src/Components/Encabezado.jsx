@@ -9,6 +9,8 @@ import { useAuth } from "../database/authcontext";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "../App.css";
 
+
+
 const Encabezado = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const { isLoggedIn, logout } = useAuth();

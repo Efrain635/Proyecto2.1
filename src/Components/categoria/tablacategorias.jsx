@@ -42,4 +42,3 @@ const TablaCategorias = ({ categorias, openEditModal, openDeleteModal }) => {
 };
 
 export default TablaCategorias;
-

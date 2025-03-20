@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Button } from "react-bootstrap";
 import { db } from "../database/firebaseconfig";
+
 import {
   collection,
   getDocs,
@@ -11,12 +12,10 @@ import {
   doc,
 } from "firebase/firestore";
 
-// Importaciones de componentes personalizados
-import TablaCategorias from "../components/categoria/tablacategorias";
-import ModalRegistroCategoria from "../components/categoria/modalregistrocategoria";
-import ModalEdicionCategoria from "../components/categoria/modaledicioncategoria";
-import ModalEliminacionCategoria from "../components/categoria/modaleliminacioncategoria";
-
+import TablaCategorias from "../components/categoria/tablaCategorias";
+import ModalRegistroCategoria from "../components/categoria/modalRegistroCategoria";
+import ModalEdicionCategoria from "../components/categoria/modalEdicionCategoria";
+import ModalEliminacionCategoria from "../components/categoria/modalEliminacionCategoria";
 
 const Categorias = () => {
   

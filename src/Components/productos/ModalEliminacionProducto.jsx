@@ -1,10 +1,11 @@
+//----------------------------------------------------------------- ModalEliminacionProducto.jsx
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 
-const ModalEliminacionCategoria = ({
+const ModalEliminacionProducto = ({
   showDeleteModal,
   setShowDeleteModal,
-  handleDeleteCategoria,
+  handleDeleteProducto,
 }) => {
   return (
     <Modal show={showDeleteModal} onHide={() => setShowDeleteModal(false)}>
@@ -12,13 +13,13 @@ const ModalEliminacionCategoria = ({
         <Modal.Title>Confirmar Eliminación</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        ¿Estás seguro de que deseas eliminar esta categoría?
+        ¿Estás seguro de que deseas eliminar este producto?
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={() => setShowDeleteModal(false)}>
           Cancelar
         </Button>
-        <Button variant="danger" onClick={handleDeleteCategoria}>
+        <Button variant="danger" onClick={handleDeleteProducto}>
           Eliminar
         </Button>
       </Modal.Footer>
@@ -26,4 +27,4 @@ const ModalEliminacionCategoria = ({
   );
 };
 
-export default ModalEliminacionCategoria;
+export default ModalEliminacionProducto;
