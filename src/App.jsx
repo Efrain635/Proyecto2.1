@@ -5,9 +5,12 @@ import Login from './views/Login';
 import Encabezado from "./components/Encabezado";
 import Inicio from "./views/Inicio";
 import Categorias from "./views/Categorias";
-import Productos from "./views/Productos";
+
 
 import './App.css'
+import TarjetaProducto from "./components/catalogo/TarjetaProducto";
+import Catalogo from "./views/Catalogo";
+import Productos from "./views/Productos";
 
 function App() {
   return (
@@ -18,8 +21,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/inicio" element={<ProtectedRoute element={<Inicio />} />} />
-              <Route path="/categorias" element={<ProtectedRoute element={<Categorias />} />}/>
-              <Route path="/productos" element={<ProtectedRoute element={<Productos />} />}/>
+              <Route path="/Categorias" element={<ProtectedRoute element={<Categorias />} />} />
+              <Route path="/Catalogo" element={<ProtectedRoute element={<Catalogo />} />} />
+              <Route path="/Productos" element={<ProtectedRoute element={<Productos />} />} />
             </Routes>
           </main>
       </Router>
