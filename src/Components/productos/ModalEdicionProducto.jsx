@@ -1,4 +1,3 @@
-//----------------------------------------------------------------- ModalEdicionProducto.jsx
 import React from "react";
 import { Modal, Form, Button, Image } from "react-bootstrap";
 
@@ -47,9 +46,7 @@ const ModalEdicionProducto = ({
             >
               <option value="">Seleccione una categoría</option>
               {categorias.map((cat) => (
-                <option key={cat.id} value={cat.nombre}>
-                  {cat.nombre}
-                </option>
+                <option key={cat.id} value={cat.nombre}>{cat.nombre}</option>
               ))}
             </Form.Select>
           </Form.Group>
