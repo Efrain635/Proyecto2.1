@@ -1,16 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./database/authcontext";
 import ProtectedRoute from "./Components/ProtectedRoute"; 
-import Login from "../src/views/Login";
-import Encabezado from "../src/components/Encabezado";
-import Inicio from "../src/views/Inicio";
-import Categorias from "../src/views/Categorias";
-
-//import Login from "./views/login";
-//import Encabezado from "./components/Encabezado";
-//import Inicio from "./views/Inicio";
-//import Categorias from "./views/Categorias";
-
+import Login from "./views/Login";
+import Encabezado from "./components/Encabezado";
+import Inicio from "./views/Inicio";
+import Categorias from "./views/Categorias";
 
 import './App.css'
 import TarjetaProducto from "./components/catalogo/TarjetaProducto";
